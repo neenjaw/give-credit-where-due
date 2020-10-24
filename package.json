@@ -1,16 +1,19 @@
 {
   "name": "give-credit-where-due",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A command-line tool to give credit to your github collaborators",
+  "main": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tim Austin",
+  "license": "AGPL3",
   "dependencies": {
     "@octokit/rest": "^18.0.6",
     "yargs": "^16.1.0"
+  },
+  "bin": {
+    "give-credit": "cli.js"
   }
 }
