@@ -19,6 +19,5 @@
   },
   "bin": {
     "give-credit": "cli.js"
-  },
-  "preferGlobal": true
+  }
 }
