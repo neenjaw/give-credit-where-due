@@ -4,11 +4,31 @@ Code is rarely derived alone. Good code comes from interactions from friends, co
 
 Git commit trailers indicating co-authorship is a great way to give credit where due. Finding the information to write that trailer is not always intuitive.
 
+## Requirements
+
+- nodejs (latest LTS (v14) was used to write command)
+- libsecret `sudo apt-get install -y libsecret-1-0`
+- libsecret-tools `sudo apt-get install -y libsecret-tools`
+
+While it doesn't explicitly run only on Ubuntu, it has been developed and tested solely on Ubuntu 20.04
+
 ## Usage
 
-This is not an npm package, but it can be installed globally. Clone the package, then install it using `npm install -g <clone repo location>`.
+### Global install
 
-Command line usage:
+`npm install -g give-credit-where-due`
+
+### Local install
+
+`git clone https://github.com/neenjaw/give-credit-where-due.git`
+
+Then it can be used:
+
+```shell
+> node give-credit-where-due/cli.js
+```
+
+### Command line usage
 
 ```text
 > give-credit [github_user_names...]
@@ -18,14 +38,6 @@ The following flags may also be used instead:
   --show-token\t\tshow the current github personal access token
   --unset-token\t\tunset github personal access token`
 ```
-
-## Requirements
-
-- nodejs (latest LTS (v14) was used to write command)
-- libsecret `sudo apt-get install -y libsecret-1-0`
-- libsecret-tools `sudo apt-get install -y libsecret-tools`
-
-While it doesn't explicitly run only on Ubuntu, it has been developed and tested solely on Ubuntu 20.04
 
 ## How does it work
 

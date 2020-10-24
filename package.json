@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A command-line tool to give credit to your github collaborators",
   "main": "cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neenjaw/give-credit-where-due.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +19,6 @@
   },
   "bin": {
     "give-credit": "cli.js"
-  }
+  },
+  "preferGlobal": true
 }
