@@ -1,6 +1,6 @@
 {
   "name": "give-credit-where-due",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command-line tool to give credit to your github collaborators",
   "main": "cli.js",
   "repository": {
